@@ -20,25 +20,19 @@
             line-height: 1.6;
         }
 
-        header {
-            background: linear-gradient(135deg, #110c18, #241137);
+        .hero {
+            background: #09080d;
             border-bottom: 2px solid #8e44ff;
-            padding: 80px 20px;
-            text-align: center;
+            padding: 0;
+            margin: 0;
+            line-height: 0;
+            overflow: hidden;
         }
 
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        header h1 span {
-            color: #a855f7;
-        }
-
-        header p {
-            color: #c9bfd3;
-            font-size: 1.2rem;
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         nav {
@@ -48,6 +42,7 @@
             border-bottom: 1px solid #28212f;
             position: sticky;
             top: 0;
+            z-index: 1000;
         }
 
         nav a {
@@ -162,13 +157,17 @@
         }
 
         @media (max-width: 600px) {
-            header h1 {
-                font-size: 2.2rem;
-            }
-
             nav a {
                 margin: 0 7px;
                 font-size: 0.9rem;
+            }
+
+            .container {
+                padding: 40px 18px;
+            }
+
+            h2 {
+                font-size: 1.6rem;
             }
         }
     </style>
@@ -176,9 +175,9 @@
 
 <body>
 
-<header>
-    <h1>Shadow<span>Husky</span> Studios</h1>
-    <p>Independent Software Development & Technology Research</p>
+<header class="hero">
+    <img src="shadowhusky-banner.png"
+         alt="ShadowHusky Studios - Independent Software Development and Technology Research">
 </header>
 
 <nav>
@@ -255,7 +254,8 @@
 
                 <a class="button"
                    href="https://github.com/shadow-husky/pokematch-release"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     View Project
                 </a>
             </div>
@@ -269,7 +269,8 @@
 
                 <a class="button"
                    href="https://github.com/shadow-husky/kid-bucks-releases"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     View Project
                 </a>
             </div>
@@ -283,7 +284,8 @@
 
                 <a class="button"
                    href="https://github.com/shadow-husky/reel-time-releases"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
                     View Project
                 </a>
             </div>
@@ -305,7 +307,9 @@
             <br><br>
 
             GitHub:
-            <a href="https://github.com/shadow-husky" target="_blank">
+            <a href="https://github.com/shadow-husky"
+               target="_blank"
+               rel="noopener noreferrer">
                 github.com/shadow-husky
             </a>
         </div>
