@@ -3,40 +3,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ShadowHusky Studios</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #09080d;
+            color: #f4f1f8;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #110c18, #241137);
+            border-bottom: 2px solid #8e44ff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header h1 span {
+            color: #a855f7;
+        }
+
+        header p {
+            color: #c9bfd3;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background: #0d0b12;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #28212f;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a855f7;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        section {
+            margin-bottom: 70px;
+        }
+
+        h2 {
+            color: #b56cff;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .about {
+            color: #d5ccd9;
+            max-width: 850px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .service {
+            background: #131018;
+            padding: 25px;
+            border: 1px solid #292031;
+            border-radius: 10px;
+        }
+
+        .service h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            color: #bdb3c4;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: #131018;
+            border: 1px solid #352641;
+            border-radius: 12px;
+            padding: 28px;
+        }
+
+        .project h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #bbb0c2;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #7c3aed;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #9333ea;
+        }
+
+        .contact-box {
+            background: #131018;
+            border-left: 4px solid #8e44ff;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .contact-box a {
+            color: #b56cff;
+            text-decoration: none;
+        }
+
+        footer {
+            border-top: 1px solid #292031;
+            text-align: center;
+            padding: 30px 20px;
+            color: #847b89;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>ShadowHusky Studios</h1>
 
-    <h2>Independent Software Development & Technology Research</h2>
+<header>
+    <h1>Shadow<span>Husky</span> Studios</h1>
+    <p>Independent Software Development & Technology Research</p>
+</header>
 
-    <p>
-        ShadowHusky Studios is an independent technology and software development
-        studio focused on application development, game development, cybersecurity
-        research, and technical experimentation.
-    </p>
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <h2>What We Do</h2>
+<main class="container">
 
-    <p>
-        Our work includes software development, mobile applications, game development,
-        networking and systems research, cybersecurity research, and experimentation
-        with gaming and computing technologies.
-    </p>
+    <section id="about">
+        <h2>About ShadowHusky Studios</h2>
 
-    <h2>Projects</h2>
+        <p class="about">
+            ShadowHusky Studios is an independent technology and software development
+            studio based in North Carolina. Our work focuses on application development,
+            game development, networking and systems research, cybersecurity research,
+            and technical experimentation.
+        </p>
+    </section>
 
-    <p>
-        ShadowHusky Studios develops original software and game projects while also
-        conducting educational security and technology research.
-    </p>
+    <section id="services">
+        <h2>What We Do</h2>
 
-    <h2>Contact</h2>
+        <div class="services">
 
-    <p>
-        ShadowHusky Studios<br>
-        North Carolina, United States
-    </p>
+            <div class="service">
+                <h3>Software Development</h3>
+                <p>
+                    Development and experimentation with desktop, mobile,
+                    and utility applications.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Game Development</h3>
+                <p>
+                    Development of original game concepts, prototypes,
+                    educational games, and interactive software.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Technology Research</h3>
+                <p>
+                    Research involving computing systems, networking,
+                    software behavior, and emerging technologies.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Security Research</h3>
+                <p>
+                    Educational cybersecurity research focused on understanding
+                    software, systems, and security technologies.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>PokéMatch</h3>
+                <p>
+                    An educational memory-matching game project designed
+                    around simple and engaging gameplay.
+                </p>
+
+                <a class="button"
+                   href="https://github.com/shadow-husky/pokematch-release"
+                   target="_blank">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Kid Bucks</h3>
+                <p>
+                    A family-focused mobile application designed around
+                    chores, rewards, goals, and virtual currency.
+                </p>
+
+                <a class="button"
+                   href="https://github.com/shadow-husky/kid-bucks-releases"
+                   target="_blank">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Reel Time</h3>
+                <p>
+                    A media application project focused on creating a
+                    customized client experience for personal media libraries.
+                </p>
+
+                <a class="button"
+                   href="https://github.com/shadow-husky/reel-time-releases"
+                   target="_blank">
+                    View Project
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <div class="contact-box">
+            <strong>ShadowHusky Studios</strong><br>
+            North Carolina, United States<br><br>
+
+            Email:
+            <a href="mailto:ShadowHuskyStudios@gmail.com">
+                ShadowHuskyStudios@gmail.com
+            </a>
+            <br><br>
+
+            GitHub:
+            <a href="https://github.com/shadow-husky" target="_blank">
+                github.com/shadow-husky
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 ShadowHusky Studios. All rights reserved.
+</footer>
+
 </body>
 </html>
